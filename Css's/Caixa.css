@@ -1,0 +1,85 @@
+.imagem-caixa {
+    width: 100%; /* Faz a caixa ocupar toda a largura disponível */
+    max-width: 600px; /* Limita a largura máxima da imagem */
+    margin: 0 auto 50px auto; /* Centraliza a caixa e adiciona um espaçamento abaixo */
+    text-align: center; /* Garante que o conteúdo dentro da caixa esteja centralizado */
+}
+
+.imagem-caixa img {
+    width: 100%; /* Faz a imagem ocupar toda a largura da caixa */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 20px; /* Arredonda os cantos da imagem */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave ao redor da imagem */
+    transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+}
+
+.imagem-caixa img:hover {
+    transform: scale(1.05); /* Efeito de zoom suave quando passar o mouse sobre a imagem */
+}
+
+  .reinos-container {
+    display: flex;
+    gap: 20px; /* Espaço entre as caixas */
+    justify-content: center;
+    flex-wrap: wrap; /* Quebra pra baixo em telas pequenas */
+    margin-top: 40px;
+}
+
+.reino-box {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.reino-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: auto;
+}
+
+.reino-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.reino-box p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0077cc;
+    color: #f0f0f0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto;
+    transition: transform 0.2s, background-color 0.2s; /* animações suaves */
+}
+
+.botao:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+h1, h2 {
+    color: #ffffff;
+  }
+  p, li {
+    color: #cccccc;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+  }

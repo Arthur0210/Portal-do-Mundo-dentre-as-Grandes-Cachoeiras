@@ -1,0 +1,22 @@
+.Banner {
+    background-image: url('../ImagensZero/RemRamFundo2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 60px; /* Compensa header fixo */
+    position: relative;
+}
+
+.Fundo-container {
+    position: relative;
+    padding: 20px;
+    margin: 0px 250px;
+    margin-top: 220px; /* Espaço para o header fixo */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,21 @@
+header button {
+    position: absolute;
+    top: 20%;
+    right: 100px;
+}
+
+.CabeçalhoCorEscuro {
+    background-color: #8A2BE2;
+}
+
+.Fundo-container {
+    background-color: #1e1e1e;
+}
+
+.CabeçalhoCorClara {
+    background-color: #BA55D3;
+}
+
+.Fundo-containerClaro {
+    background-color: #ffffff;
+}

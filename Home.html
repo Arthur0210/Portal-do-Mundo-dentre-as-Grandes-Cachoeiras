@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="ImagensZero/Flag_of_the_Dragon_Kingdom_of_Lugnica.webp">
+        <title>Portal do Mundo dentre as Grandes Cachoeiras</title>
+        <link rel="preload" href="Links.css" as="style">
+        <link rel="stylesheet" href="Links.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header></header>
+    
+        <div class="Banner">
+            <main class=Fundo-container>
+                <h1 style="text-align: center;">Portal do Mundo dentre as Grandes Cachoeiras</h1>
+                <h2 style="text-align: center;">O portal mais 100% atualizado sobre tudo o que acontece no Mundo dentre as Grandes Cachoeiras, o fim do mundo onde magia, intriga e batalhas épicas definem o destino dos reinos</h2>
+                <div class="imagem-caixa">
+                    <img src="ImagensZero/Mapa.webp" alt="Mapa Mundí">
+                </div>
+            
+                <p style="text-align: justify; text-align-last: center;">O Mundo dentre as Grandes Cachoeiras é um continente de fantasia onde o sobrenatural e o real se entrelaçam, criando um ambiente único em que a geografia, a magia e as forças políticas moldam profundamente a cultura, as alianças e os conflitos. Este mundo é rodeado por vastas paisagens, desde as planícies férteis de Lugnica até as regiões áridas e montanhosas de Vollachia. O que mais chama atenção são as gigantescas cachoeiras que caem no vazio, como se o mundo estivesse suspenso sobre um abismo, um fenômeno natural que intriga e fascina tanto os estudiosos quanto os habitantes locais. Aqui, as barreiras naturais, como florestas mágicas e territórios congelados, e os fenômenos sobrenaturais — como a Floresta de Elior, eternamente congelada — fazem deste lugar uma tapeçaria viva de ecossistemas distintos e imprevisíveis. Além disso, o mundo é povoado por diversas raças, de humanos a semi-humanos, demônios e espíritos, cada uma com sua história e influência no desenvolvimento das relações políticas e culturais.</p>
+        
+                <div class="reinos-container">
+                    <div class="reino-box">
+                        <img src="ImagensZero/LugnicaReino.jpg" alt="Reino de Lugnica">
+                        <h3>Reino de Lugnica</h3>
+                        <p>Um reino de vastas planícies e cidades prósperas, governado por uma monarquia histórica.</p>
+                        <a href="lugnica.html" class="botao">Saiba mais</a>
+                    </div>
+            
+                    <div class="reino-box">
+                        <img src="ImagensZero/Vollachia.png" alt="Império de Vollachia">
+                        <h3>Império de Vollachia</h3>
+                        <p>Terra selvagem, de desertos e montanhas, onde impera a lei do mais forte.</p>
+                        <a href="vollachia.html" class="botao">Saiba mais</a>
+                    </div>
+            
+                    <div class="reino-box">
+                        <img src="ImagensZero/Gusteko.webp" alt="Reino Sagrado de Gusteko">
+                        <h3>Reino Sagrado de Gusteko</h3>
+                        <p>Um reino gelado, cercado por tundras eternas e tradições ancestrais.</p>
+                        <a href="gusteko.html" class="botao">Saiba mais</a>
+                    </div>
+            
+                    <div class="reino-box">
+                        <img src="ImagensZero/Kararagi.webp" alt="Cidade-Estado de Kararagi">
+                        <h3>Cidade-Estado de Kararagi</h3>
+                        <p>Confederação de cidades-estado, famosa por seu comércio vibrante e cultura diversa.</p>
+                        <a href="kararagi.html" class="botao">Saiba mais</a>
+                    </div>
+                </div>
+
+                <h1 style="text-align: center;">Ultimas Noticias</h2>
+                
+                    <div class="Carrossel">
+                        <div class="Carrossel-Imagem">
+                            <img src="ImagensZero/WilhelmWhiteWhale.jpg" alt="Baleia Branca Derrotada após 400 anos">
+                            <h2>Baleia Branca Derrotada após 400 anos</h2>
+                            <a href="link1.html" class="Carrossel-Link" target="_blank">Saiba Mais</a>
+                        </div>
+                        <div class="Carrossel-Imagem">
+                            <img src="ImagensZero/BetelgeuseDeath.jpg" alt="Culto da Bruxa Perde? Bispo da Gula Morto">
+                            <h2>Culto da Bruxa Perde? Bispo da Gula Morto</h2>
+                            <a href="link2.html" class="Carrossel-Link" target="_blank">Saiba Mais</a>
+                        </div>
+                        <div class="Carrossel-Imagem">
+                            <img src="ImagensZero/PriestellaCarrossel.webp" alt="Cidade de Pristella atacada pelo Culto">
+                            <h2>Cidade de Pristella atacada pelo Culto</h2>
+                            <a href="link3.html" class="Carrossel-Link" target="_blank">Saiba Mais</a>
+                        </div>
+                    
+                        <button class="Carrossel-Botao Carrossel-Prev" onclick="mudarImagem('prev')">&#10094;</button>
+                        <button class="Carrossel-Botao Carrossel-Next" onclick="mudarImagem('next')">&#10095;</button>
+                    </div>
+                    
+                
+
+            </main>
+        </div>
+        <script>
+            // Carrega o header imediatamente ao abrir a página
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('Header.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.querySelector('header').innerHTML = html;
+                    })
+                    .catch(error => {
+                        console.error('Erro ao carregar o header:', error);
+                        // Fallback: Mostra um header básico se o arquivo não for encontrado
+                        document.querySelector('header').innerHTML = `
+                            <div class="logo">
+                                <img src="ImagensZero/Re_Zero_Logo.png" alt="Logo">
+                            </div>
+                            <nav>
+                                <a href="Home.html">Home</a>
+                            </nav>
+                        `;
+                    });
+            });
+
+            let imagemAtual = 0;
+            const imagens = document.querySelectorAll('.Carrossel-Imagem');
+            const totalImagens = imagens.length;
+            const botaoPrev = document.querySelector('.Carrossel-Prev');
+            const botaoNext = document.querySelector('.Carrossel-Next');
+
+            imagens[imagemAtual].style.display = 'block';
+            imagens[imagemAtual].style.transform = 'translateX(0)';
+
+            function mudarImagem(direcao) {
+            // Bloquear os botões enquanto a animação está em andamento
+                botaoPrev.disabled = true;
+                botaoNext.disabled = true;
+
+                let imagemAnterior = imagemAtual;
+
+                if (direcao === 'next') {
+                    imagemAtual = (imagemAtual + 1) % totalImagens;
+                } else if (direcao === 'prev') {
+                    imagemAtual = (imagemAtual - 1 + totalImagens) % totalImagens;
+                }
+
+                imagens[imagemAtual].style.display = 'block';
+                imagens[imagemAtual].style.transform = 'translateX(100%)';
+
+                setTimeout(() => {
+                    imagens[imagemAnterior].style.transition = 'transform 1s ease-in-out';
+                    imagens[imagemAnterior].style.transform = 'translateX(-100%)';
+                    imagens[imagemAtual].style.transition = 'transform 1s ease-in-out';
+                    imagens[imagemAtual].style.transform = 'translateX(0)';
+                }, 50);
+
+                setTimeout(() => {
+                    imagens[imagemAnterior].style.transition = 'none';
+                    imagens[imagemAnterior].style.display = 'none';
+                    // Reabilitar os botões após a animação terminar
+                    botaoPrev.disabled = false;
+                    botaoNext.disabled = false;
+                }, 1050); // Tempo da animação (1s)
+            }
+
+        </script>
+        <script>
+            const cabeca = document.querySelector("header");
+            const fundo = document.querySelector(".Banner"); //chama ".banner em css de fundo em js"
+            const alturacabeca = 303.19;
+            let fundopos = fundo.style.backgroundPosition;
+            fundopos =`0px ${alturacabeca}px`
+
+            window.addEventListener("scroll", function () {
+                const scrollagem = this.window.scrollY;
+                if(scrollagem > 0){
+                fundopos = `0px ${alturacabeca-scrollagem}px`
+                }
+            });
+        </script>
+    </body>
+</html>

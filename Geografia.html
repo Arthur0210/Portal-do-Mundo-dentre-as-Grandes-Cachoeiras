@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="ImagensZero/Flag_of_the_Dragon_Kingdom_of_Lugnica.webp">
+        <title>Portal do Mundo dentre as Grandes Cachoeiras</title>
+        <link rel="stylesheet" href="Links.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header></header>
+    
+        <section class="Banner">
+            <main class=Fundo-container>
+                <p style="text-align: justify; text-align-last: center;">O Mundo dentre as Grandes Cachoeiras é um continente de fantasia onde o sobrenatural e o real se entrelaçam, criando um ambiente único em que a geografia, a magia e as forças políticas moldam profundamente a cultura, as alianças e os conflitos. Este mundo é rodeado por vastas paisagens, desde as planícies férteis de Lugnica até as regiões áridas e montanhosas de Vollachia. O que mais chama atenção são as gigantescas cachoeiras que caem no vazio, como se o mundo estivesse suspenso sobre um abismo, um fenômeno natural que intriga e fascina tanto os estudiosos quanto os habitantes locais. Aqui, as barreiras naturais, como florestas mágicas e territórios congelados, e os fenômenos sobrenaturais — como a Floresta de Elior, eternamente congelada — fazem deste lugar uma tapeçaria viva de ecossistemas distintos e imprevisíveis. Além disso, o mundo é povoado por diversas raças, de humanos a semi-humanos, demônios e espíritos, cada uma com sua história e influência no desenvolvimento das relações políticas e culturais.</p>
+        
+                <div class="reinos-container">
+                    <div class="reino-box">
+                        <img src="ImagensZero/LugnicaReino.jpg" alt="Reino de Lugnica">
+                        <h3>Reino de Lugnica</h3>
+                        <p>Um reino de vastas planícies e cidades prósperas, governado por uma monarquia histórica.</p>
+                        <a href="lugnica.html" class="botao">Saiba mais</a>
+                    </div>
+            
+                    <div class="reino-box">
+                        <img src="ImagensZero/Vollachia.png" alt="Império de Vollachia">
+                        <h3>Império de Vollachia</h3>
+                        <p>Terra selvagem, de desertos e montanhas, onde impera a lei do mais forte.</p>
+                        <a href="vollachia.html" class="botao">Saiba mais</a>
+                    </div>
+            
+                    <div class="reino-box">
+                        <img src="ImagensZero/Gusteko.webp" alt="Reino Sagrado de Gusteko">
+                        <h3>Reino Sagrado de Gusteko</h3>
+                        <p>Um reino gelado, cercado por tundras eternas e tradições ancestrais.</p>
+                        <a href="gusteko.html" class="botao">Saiba mais</a>
+                    </div>
+            
+                    <div class="reino-box">
+                        <img src="ImagensZero/Kararagi.webp" alt="Cidade-Estado de Kararagi">
+                        <h3>Cidade-Estado de Kararagi</h3>
+                        <p>Confederação de cidades-estado, famosa por seu comércio vibrante e cultura diversa.</p>
+                        <a href="kararagi.html" class="botao">Saiba mais</a>
+                    </div>
+                </div>
+
+
+            </main>
+        </section>
+        <script>
+            fetch("header.html")
+              .then(res => res.text())
+              .then(data => {
+                document.querySelector("header").innerHTML = data;
+              });
+        </script>
+    </body>
+</html>

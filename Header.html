@@ -1,0 +1,91 @@
+    <header class="CabeçalhoCorEscuro">
+        <button id="Botao">Trocar Tema</button>
+        <div class="logo">
+          <img src="ImagensZero/Re_Zero_Logo.png" alt="Logo">
+          <link rel="stylesheet" href="Links.css">
+        </div>
+        <nav class="menu-nav">
+          <ul>
+            <li>
+                <a href="Home.html">Home</a>
+                <div class="minimenu">
+                    <ul>
+                        <li><a href="Home.html#noticias">Início Rápido</a></li>
+                        <li><a href="Home.html#eventos">Eventos</a></li>
+                        <li><a href="Home.html#galeria">Resumo da Semana</a></li>
+                        <li><a href="Home.html#contato">Entrar / Registrar</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="Geografia.html">Geografia</a>
+                <div class="minimenu">
+                    <ul>
+                        <li><a href="Home.html#noticias">Reinos</a></li>
+                        <li><a href="Home.html#eventos">Regiões Especiais</a></li>
+                        <li><a href="Home.html#galeria">Geopolítica</a></li>
+                        <li><a href="Home.html#contato">Fronteiras e Viagens</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="Home.html">História</a>
+                <div class="minimenu">
+                    <ul>
+                        <li><a href="Home.html#noticias">Linha do Tempo</a></li>
+                        <li><a href="Home.html#eventos">Grandes Guerras</a></li>
+                        <li><a href="Home.html#galeria">Mitos e Lendas</a></li>
+                        <li><a href="Home.html#contato">Arquivos Antigos</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="Home.html">Recente</a>
+                <div class="minimenu">
+                    <ul>
+                        <li><a href="Home.html#noticias">Novos Eventos</a></li>
+                        <li><a href="Home.html#eventos">Mudanças Políticas</a></li>
+                        <li><a href="Home.html#galeria">Últimos Anúncios</a></li>
+                        <li><a href="Home.html#contato">Rumores e Boatos</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="Home.html">Sobre Nós</a>
+                <div class="minimenu">
+                    <ul>
+                        <li><a href="Home.html#noticias">Quem Somos</a></li>
+                        <li><a href="Home.html#eventos">Contato</a></li>
+                        <li><a href="Home.html#galeria">Apoie o Projeto</a></li>
+                        <li><a href="Home.html#contato">Créditos</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="Home.html">Mais</a>
+                <div class="minimenu">
+                    <ul>
+                        <li><a href="Home.html#noticias">Curiosidades</a></li>
+                        <li><a href="Home.html#eventos">Personalidades Famosas</a></li>
+                        <li><a href="Home.html#galeria">Loja</a></li>
+                        <li><a href="Home.html#contato">Quiz de Conhecimento</a></li>
+                    </ul>
+                </div>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <script>
+        const botao = document.getElementById("modo-toggle");
+        const fundo = document.body;
+
+        botao.addEventListener("click", () => {
+            if (fundo.classList.contains("Fundo-container")) {
+                fundo.classList.replace("Fundo-container", "Fundo-containerClaro");
+                document.querySelector("header").classList.replace("CabeçalhoCorEscuro", "CabeçalhoCorClara");
+            } else {
+                fundo.classList.replace("Fundo-containerClaro", "Fundo-container");
+                document.querySelector("header").classList.replace("CabeçalhoCorClara", "CabeçalhoCorEscuro");
+            }
+        });
+    </script>

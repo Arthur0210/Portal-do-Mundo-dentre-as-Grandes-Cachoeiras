@@ -1,0 +1,95 @@
+.Carrossel {
+    border: 2px solid black;
+    width: 950px;
+    padding: 0; /* Tirar padding interno */
+    margin: 0 auto;
+    position: relative;
+    height: 500px;
+    border-radius: 12px;
+    background-color: #000; /* Preto sólido */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.Carrossel-Imagem {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* COBRIR o espaço, sem distorcer */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.8s ease-in-out;
+    border-radius: 12px;
+}
+
+.Carrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.Carrossel h2 {
+    color: #ffffff;
+    font-size: 28px;
+    padding: 8px 16px;
+    background-color: rgba(80, 0, 150, 0.8);
+    border-radius: 10px;
+    position: absolute;
+    top:5%; /* Subi o título */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    max-width: 90%;
+    text-align: center;
+}
+
+.Carrossel-Botao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(80, 0, 150, 0.8);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 30;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.Carrossel-Botao:hover {
+    background-color: rgba(120, 0, 200, 0.9);
+}
+
+.Carrossel-Prev {
+    left: 20px;
+}
+
+.Carrossel-Next {
+    right: 20px;
+}
+
+.Carrossel-Link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgba(80, 0, 150, 0.8);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.Carrossel-Link:hover {
+    background-color: rgba(120, 0, 200, 0.9);
+}

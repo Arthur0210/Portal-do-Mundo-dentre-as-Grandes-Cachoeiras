@@ -1,0 +1,46 @@
+.minimenu {
+    display: none; /* Inicialmente oculta */
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    border: 1px solid #333;
+    position: absolute; /* Posicionamento absoluto */
+    top: 90%; /* Faz ela aparecer abaixo do link */
+    z-index: 1; /* Garante que ela fique acima dos outros elementos */
+    width: auto;
+    min-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    transform: translateY(-10px);
+}
+
+/* Exibe a caixa quando o mouse passa sobre o link */
+li:hover .minimenu {
+    display: block;
+    transform: translateY(0);
+}
+
+.minimenu ul {
+    list-style: none; /* Tira as bolinhas da lista */
+    margin: 0;
+    padding: 5px;
+    display: block; /* Já é o padrão para <ul> */
+}
+
+.minimenu ul li {
+    margin: 0;
+    padding: 5px; /* Espaço entre os itens */
+}
+
+.minimenu ul li a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Tira o sublinhado */
+    font-size: 14px;
+    display: block;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.minimenu ul li a:hover {
+    background-color: #333; /* Fundo diferente quando passa o mouse */
+    display: block;
+}
