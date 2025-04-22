@@ -1,0 +1,39 @@
+.TelaDeCadastro {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.FundoCadastro {
+    background-image: url('../ImagensZero/FundoCadastroBeako.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.TelaDeCadastro button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0077cc;
+    color: #f0f0f0;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: auto;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.TelaDeCadastro button:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
